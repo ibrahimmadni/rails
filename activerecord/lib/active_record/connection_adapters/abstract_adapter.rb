@@ -165,7 +165,7 @@ module ActiveRecord
       end
 
       def connection_retries
-        (@config[:connection_retries] || 3).to_i
+        (@config[:connection_retries] || 1).to_i
       end
 
       def default_timezone
